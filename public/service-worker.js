@@ -6,7 +6,6 @@
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
-    // '/index.js',  //????
     '/style.css',
     '/icons/icon-192x192.png',
     '/icons/icon-512x512.png',
@@ -26,6 +25,10 @@ self.addEventListener('install', (event) => {
 //   evt.waitUntil(
 //     caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/images"))
 //   );
+  event.waitUntil( //pre cache the transation data based on the api/transactions route
+    caches.open(RUNTIME).then(cache => cache.add("/api/transactions"))
+  );
+
   event.waitUntil( //wait until our pre-cache or static cache has opened, then add those files to cache
     caches.open(PRECACHE).then(cache => {
     return cache.addAll(FILES_TO_CACHE);
