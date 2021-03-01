@@ -6,13 +6,12 @@
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
-    '/index.js',  //????
+    // '/index.js',  //????
     '/style.css',
     '/icons/icon-192x192.png',
     '/icons/icon-512x512.png',
+    'manifest.webmanifest',
     '/dist/bundle.js',
-
-
 ];
 
 // const CACHE_NAME = 'static-cache-v2';
@@ -23,6 +22,10 @@ const RUNTIME = 'runtime';
 
 //Install Event //caches is a global varible so it doesn't need defining
 self.addEventListener('install', (event) => {
+     // pre cache image data --- see if this is needed for api/transaction
+//   evt.waitUntil(
+//     caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/images"))
+//   );
   event.waitUntil( //wait until our pre-cache or static cache has opened, then add those files to cache
     caches.open(PRECACHE).then(cache => {
     return cache.addAll(FILES_TO_CACHE);
