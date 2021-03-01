@@ -1,8 +1,3 @@
-//Installation
-//Waiting
-//Activation
-
-
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
@@ -13,19 +8,15 @@ const FILES_TO_CACHE = [
     '/dist/bundle.js',
 ];
 
-// const CACHE_NAME = 'static-cache-v2';
-// const DATA_CACHE_NAME = 'data-cache-v1';
+
 const PRECACHE = 'precache-v1';
 const RUNTIME = 'runtime';
 
 
 //Install Event //caches is a global varible so it doesn't need defining
 self.addEventListener('install', (event) => {
-     // pre cache image data --- see if this is needed for api/transaction
-//   evt.waitUntil(
-//     caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/images"))
-//   );
-  event.waitUntil( //pre cache the transation data based on the api/transactions route
+
+  event.waitUntil( //load the pre cache transation data on install (based on the api/transactions route)
     caches.open(RUNTIME).then(cache => cache.add("/api/transactions"))
   );
 
