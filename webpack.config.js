@@ -1,13 +1,11 @@
-const WebpackPwaManifest = require('webpack-pwa-manifest');
+// const WebpackPwaManifest = require('webpack-pwa-manifest'); //don't need this plugin
 const path = require('path');
 
 
 //config for webpack with babel
 const config = {
     entry: {
-      app: './public/index.js',
-    //   favorites: './assets/js/favorites.js', //multiple enrry points?
-    //   topic: './assets/js/topic.js',
+      app: './public/index.js', //using public dir instead of src dir
     },
     output: {
       path: __dirname + '/dist',
