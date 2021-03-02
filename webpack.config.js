@@ -28,9 +28,6 @@ const config = {
     },
 
 
-
-    //Plugins
-
 }; //end const config
 
   module.exports = config;
