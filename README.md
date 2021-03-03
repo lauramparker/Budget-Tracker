@@ -24,12 +24,10 @@ To set-up the development environment, clone the repository found at https://git
    npm install indexeddb
 
 To run the application locally, navigate to the path containing the server.js file and, from the command line, enter node server. Then, open your browser and type the local PORT, ie:  http://localhost:3000/
-    
-    Alternatively, access this application on heroku where it is deployed:  
-    https://immense-basin-97081.herokuapp.com/
-    
-    
 
+Alternatively, access this application on heroku where it is deployed:  https://immense-basin-97081.herokuapp.com/
+    
+  
 
 
 <h3>Usage:</h3> Use this project as an example of a Progressive Web Application using a service-worker and manifest
