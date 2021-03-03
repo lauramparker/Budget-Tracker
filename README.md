@@ -18,10 +18,12 @@ Budget Tracker has offline capabilities in that a user can continue entering tra
 
 <h3>Installation:</h3>
 To set-up the development environment, clone the repository found at https://github.com/lauramparker/budget-tracker. To run the application, the following npm packages need installation:
-   npm install
-   npm install node
-   npm install mongoose
-   npm install indexeddb
+<ul>
+    <li> npm install</li>
+  <li> npm install node</li>
+  <li> npm install mongoose</li>
+  <li> npm install indexeddb</li>
+</ul>
 
 To run the application locally, navigate to the path containing the server.js file and, from the command line, enter node server. Then, open your browser and type the local PORT, ie:  http://localhost:3000/
 
