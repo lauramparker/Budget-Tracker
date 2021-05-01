@@ -5,7 +5,6 @@ const FILES_TO_CACHE = [
     '/icons/icon-192x192.png',
     '/icons/icon-512x512.png',
     'manifest.webmanifest',
-    // '/dist/bundle.js',
 ];
 
 
@@ -17,7 +16,7 @@ const RUNTIME = 'runtime';
 self.addEventListener('install', (event) => {
 
   event.waitUntil( //load the pre cache transation data on install (based on the api/transactions route)
-    caches.open(RUNTIME).then(cache => cache.add("/api/transactions"))
+    caches.open(RUNTIME).then(cache => cache.add("/api/transaction"))
   );
 
   event.waitUntil( //wait until our pre-cache or static cache has opened, then add those files to cache

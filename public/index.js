@@ -25,13 +25,15 @@ function populateTotal() {
 }
 
 function populateTable() {
-  let tbody = document.querySelector("#tbody");
-  tbody.innerHTML = "";
+
+  document.querySelector("#tbody").innerHTML;
 
   transactions.forEach(transaction => {
+
     // create and populate a table row
     let tr = document.createElement("tr");
     tr.innerHTML = `
+      <td>${transaction.dateFormat}</td>  
       <td>${transaction.name}</td>
       <td>${transaction.value}</td>
     `;
@@ -71,7 +73,7 @@ function populateChart() {
         datasets: [{
             label: "Total Over Time",
             fill: true,
-            backgroundColor: "#6666ff",
+            backgroundColor: "#41B3A3",
             data
         }]
     }
@@ -96,7 +98,8 @@ function sendTransaction(isAdding) {
   let transaction = {
     name: nameEl.value,
     value: amountEl.value,
-    date: new Date().toISOString()
+    date: new Date().toISOString(),
+    dateFormat: new Date().getMonth() + 1 + "/" + new Date().getDate()
   };
 
   // if subtracting funds, convert amount to negative number

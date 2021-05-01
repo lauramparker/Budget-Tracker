@@ -1,11 +1,18 @@
 body {
   font-size: 120%;
-  font-family: Arial;
+  font-family: 'Source Code Pro', monospace;
+  /* background-image: url('https://d29fhpw069ctt2.cloudfront.net/photo/52193/preview/npreview_1280x1280.jpg');
+  background-size: cover; */
 }
 
 button, input {
-  font-size: 100%;
-  font-family: Arial;
+  font-size: 80%;
+  float: left;
+}
+
+.form-group {
+  width: 20%;
+  margin-left: -20%;
 }
 
 table {
@@ -13,13 +20,13 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #379683;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #8ee4af;
 }
 
 .error {
@@ -34,7 +41,6 @@ tr:nth-child(even) {
 
 .total {
   font-size: 150%;
-  text-decoration: underline;
 }
 
 .form {
