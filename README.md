@@ -1,6 +1,9 @@
 # Budget Tracker
  _A progressive web application_
  _using MongoDB_
+ 
+ ![License](https://img.shields.io/badge/LICENSE-MIT-blue)
+
 
 
 > This project delivers a progressive web application-- Budget Tracker -- that allows a user to enter simple budget transactions and charts those transactions.  When a user wants to log a transaction, they need to enter the transaction name (i.e "Groceries" or "Paycheck"), enter the transaction amount, and select the appropriate button to either 
