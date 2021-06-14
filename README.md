@@ -1,39 +1,43 @@
-# Budget-Tracker
-<h3><u>Title: Budget Tracker<u></h3>
-<h5>A Progressive Web App</h5>
+# Budget Tracker
+ _A progressive web application_
 
-<h3>Description:</h3> 
-This project delivers a progressive web application-- Budget Tracker -- that allows a user to enter simple budget transactions and charts those transactions.  When a user wants to log a transaction, they need to enter the transaction name (i.e "Groceries" or "Paycheck"), enter the transaction amount, and select the appropriate button to either 
-"+ Add Funds" or "-Subtract Funds".  The app logs the transaction, then charts all transaction dates, and cooresponding budget totals in an area chart. 
+![MongoDB](https://e7.pngegg.com/pngimages/410/82/png-clipart-mongodb-inc-nosql-document-oriented-database-business-text-people-thumbnail.png)
 
-Budget Tracker has offline capabilities in that a user can continue entering transactions when offline. Those transactions will be cached and the database updated when the user is online again, thus retaining both their online and offline entries.  A service-worker.js file and manifest file are included in the app to allow for the offline functionality, and indexedDB is used to store client side data. The application database is on MongoDB Cloud Atlas and the deployed application is found on heroku: https://immense-basin-97081.herokuapp.com/
+> This project delivers a progressive web application-- Budget Tracker -- that allows a user to enter simple budget transactions and charts those transactions.  When a user wants to log a transaction, they need to enter the transaction name (i.e "Groceries" or "Paycheck"), enter the transaction amount, and select the appropriate button to either 
+"+ Add Funds" or "-Subtract Funds".  The app logs the transaction, then charts all transaction dates, and cooresponding budget totals in an area chart. A service-worker.js file and manifest file are included in the app to allow for the offline functionality, and indexedDB is used to store client side data. The application database is on MongoDB Cloud Atlas and the deployed application is found on heroku: 
 
+Features include:
 
-<h3>Overview Snapshot of User Interface:</h3> 
+- "Add" or "Subtract" buttons indicate expense or income entries
+- Dynamic charting of individual transactions and the total budget balance
+- Offline capabilities so that a user can continue entering transactions
 
-<p>
-    <img src="images/budgetREADME.png" width="350" height="350" />
-</p>
+![budget tracker demo](https://github.com/lauramparker/Budget-Tracker/blob/main/public/Budget%20Tracker.gif)
 
-
-<h3>Installation:</h3>
-To set-up the development environment, clone the repository found at https://github.com/lauramparker/budget-tracker. To run the application, the following npm packages need installation:
-<ul>
-    <li> npm install</li>
-  <li> npm install node</li>
-  <li> npm install mongoose</li>
-  <li> npm install indexeddb</li>
-</ul>
-
-To run the application locally, navigate to the path containing the server.js file and, from the command line, enter node server. Then, open your browser and type the local PORT, ie:  http://localhost:3000/
-
-Alternatively, access this application on heroku where it is deployed:  https://immense-basin-97081.herokuapp.com/
-    
-  
+## Technologies Used
+- [ReactJS](https://reactjs.org)
+- [OpenWeatherMap API](https://openweathermap.org)
 
 
-<h3>Usage:</h3> Use this project as an example of a Progressive Web Application using a service-worker and manifest
+## Installation
 
-<h3>Credits:</h3> Laura Parker @lauramparker (author)
+To set-up the development environment, clone the repository found at https://github.com/lauramparker/Budget-Tracker. The following npm packages are required: 
+```
+- npm i node 
+- npm i mongoose
+- npm i indexeddb
+```
 
-<h3>License:</h3> MIT   <i>Please use this project for your own learning!</i> 
+To run the application locally, enter node server. The app will open on localhost port 3000.
+
+Alternatively, the app can be accessed on heroku: [Budget-Tracker](https://immense-basin-97081.herokuapp.com/)
+
+## Usage
+Use this project as an example of a progressive web app using a service-worker & manifest
+
+## Credits
+Laura Parker @lauramparker (author)
+
+## License
+MIT
+
