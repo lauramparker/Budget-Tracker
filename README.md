@@ -1,7 +1,7 @@
 # Budget Tracker
  _A progressive web application_
+ _using MongoDB_
 
-![MongoDB](https://e7.pngegg.com/pngimages/410/82/png-clipart-mongodb-inc-nosql-document-oriented-database-business-text-people-thumbnail.png)
 
 > This project delivers a progressive web application-- Budget Tracker -- that allows a user to enter simple budget transactions and charts those transactions.  When a user wants to log a transaction, they need to enter the transaction name (i.e "Groceries" or "Paycheck"), enter the transaction amount, and select the appropriate button to either 
 "+ Add Funds" or "-Subtract Funds".  The app logs the transaction, then charts all transaction dates, and cooresponding budget totals in an area chart. A service-worker.js file and manifest file are included in the app to allow for the offline functionality, and indexedDB is used to store client side data. The application database is on MongoDB Cloud Atlas and the deployed application is found on heroku: 
@@ -12,11 +12,14 @@ Features include:
 - Dynamic charting of individual transactions and the total budget balance
 - Offline capabilities so that a user can continue entering transactions
 
-![budget tracker demo](https://github.com/lauramparker/Budget-Tracker/blob/main/public/Budget%20Tracker.gif)
+## Demo
+
+![budget tracker demo](https://github.com/lauramparker/Budget-Tracker/blob/main/images/Budget%20Tracker.gif)
+
 
 ## Technologies Used
-- [ReactJS](https://reactjs.org)
-- [OpenWeatherMap API](https://openweathermap.org)
+- [MongoDB](https://mongodb.com)
+- IndexedDB
 
 
 ## Installation
